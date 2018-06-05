@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="../js/swiper-4.2.6.min.js" ></script>
+    <script type="text/javascript" src="../js/main.js" ></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/swiper-4.2.6.min.css" />
+	</head>
+	<body>
+			<!--轮播star-->
+    <div class="header">
+    
+    <div class="swiper-container"><!--swiper容器[可以随意更改该容器的样式-->  
+    <div class="swiper-wrapper">  
+        <div class="swiper-slide"><img src="../images/index/banner1.png"></div>  
+        <div class="swiper-slide"><img src="../images/index/banner2.png"></div>  
+        <div class="swiper-slide"><img src="../images/index/banner3.png"></div>  
+    </div>  
+    <div class="swiper-pagination"></div><!--分页器-->、   
+    </div>  
+  
+    </div>
+    <!--轮播end-->
+    
+    <div class="newcenter">
+    	<p class="title">九大特色服务</p>
+    	<ul>
+    		<li><img src="../images/centerimg.png" /><p>企业成立</p></li>
+    		<li class="second"><img src="../images/centerimg.png" /><p>线上创客</p></li>
+    		<li><img src="../images/centerimg.png" /><p>线下工位</p></li>
+    		<li><img src="../images/centerimg.png" /><p>租赁服务</p></li>
+    		<li class="second"><img src="../images/centerimg.png" /><p>品牌运营</p></li>
+    		<li><img src="../images/centerimg.png" /><p>创业融资</p></li>
+    		<li class="bottom"><img src="../images/centerimg.png" /><p>大咖座谈</p></li>
+    		<li class="second bottom"><img src="../images/centerimg.png" /><p>线上创客</p></li>
+    		<li class="bottom"><img src="../images/centerimg.png" /><p>线下工位</p></li>
+    	</ul>
+    </div>
+    
+    
+    <div style="width: 100%;height: 1.5rem;"></div>	
+    <!--底部导航star-->
+  <div class="footer">
+   <ul class="footer_menu">
+    <li><a href="../index/index.html"><img src="../images/index/nav1.png" /><p>首页</p></a></li>
+    <li><a  href="../service/service.html"><img src="../images/index/nav2.png" /><p>服务商</p></a></li>
+    <li><a><img src="../images/index/nav3_on.png" /><p style="color: #00dfb9;">创客中心</p></a></li>
+    <li><a href="../find/find.html"><img src="../images/index/nav4.png" /><p>发现</p></a></li>
+    <li><a href="../user/user.html"><img src="../images/index/nav5.png" /><p>我的</p></a></li>
+  </ul>
+  </div>
+  <!--底部导航end-->
+
+  <script type="text/javascript">  
+    var mySwiper = new Swiper(".swiper-container",{  
+        direction:"horizontal",/*横向滑动*/  
+        loop:true,/*形成环路（即：可以从最后一张图跳转到第一张图*/  
+      //   autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })  
+</script>
+	</body>
+</html>
