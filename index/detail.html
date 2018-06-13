@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="../js/swiper-4.2.6.min.js" ></script>
+    <script type="text/javascript" src="../js/main.js" ></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/swiper-4.2.6.min.css" />
+  </head>
+  <body>
+    <div class="detail_title">
+      <a href="javascript:;" onclick="javascript:history.back(-1);"><img src="../images/index/back.png"></a>
+     <span>产品详情</span>
+   </div>
+  	<!--轮播star-->
+    <div class="detail_header">
+    <div class="swiper-container swiper-container1"><!--swiper容器[可以随意更改该容器的样式-->  
+    <div class="swiper-wrapper">  
+        <div class="swiper-slide"><img src="../images/index/detail_img.png"></div>  
+        <div class="swiper-slide"><img src="../images/index/detail_img.png"></div>  
+        <div class="swiper-slide"><img src="../images/index/detail_img.png"></div>  
+    </div>  
+    <div class="swiper-pagination"></div><!--分页器-->
+</div>  
+  
+    </div>
+    <!--轮播end-->
+    <div class="info">
+    <!-- 商品信息start -->
+    <div class="info_text1">
+      <div class="info_title">
+      <p class="name">Xiaomi/小米 小爱音箱mini小爱同学智能音箱网络音箱蓝牙音响</p>
+      <p class="market">
+        <span class="num">1000积分</span>
+        <span class="price">
+          市场价：<i>￥</i>
+          <span>420.00</span>
+        </span>
+      </p>
+      </div>
+    </div>
+    <div class="info_text2">
+      <div class="info_place">
+      <span>快递：0元</span>
+      <span>库存：66件</span>
+      <span>广东广州</span>
+      </div>
+    </div>
+    <div class="info_text3">
+      <div class="info_num">
+        数量：
+        <div class="info_box">
+        <div class="info_button">
+        <button name="1" class="minus" onclick="calculate(this)"><img src="../images/index/minus.png"></button>
+        <input type="text" value="1" name="num">
+        <button name="2" class="add" onclick="calculate(this)"><img src="../images/index/add.png"></button>
+        </div>
+        </div>
+      
+    
+      </div>
+    </div>
+    <!-- 商品信息end -->
+
+    <!-- 图文详情start -->
+    <div class="info_detail">
+      <div class="info_text">
+      <p>图文详情</p>
+      <div class="content">
+      <h3>硬件参数</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th>CPU</th>
+            <td>Cortex-A7 四核 1.2GHZ</td>
+          </tr>
+          <tr>
+            <th>扬声器单元</th>
+            <td>1.5英寸 全频</td>
+          </tr>
+          <tr>
+            <th>额定阻抗</th>
+            <td>4欧姆</td>
+          </tr>
+          <tr>
+            <th>频响范围</th>
+            <td>140Hz-20000Hz</td>
+          </tr>
+          <tr>
+            <th>扬声器灵敏度</th>
+            <td>78dB/m/W</td>
+          </tr>
+          <tr>
+            <th>最大输出功率</th>
+            <td>2W</td>
+          </tr>
+          <tr>
+            <th>电源输入</th>
+            <td>5V 2A</td>
+          </tr>
+          <tr>
+            <th>麦克风</th>
+            <td>4个</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+      <div class="info_img">
+        <img src="../images/index/product1.png">
+        <img src="../images/index/product2.png">
+      </div>
+    </div>
+    <!-- 图文详情end -->
+    <div class="change" role="button">立即兑换</div>
+    </div>
+
+<script type="text/javascript">  
+    var mySwiper = new Swiper(".swiper-container1",{  
+        direction:"horizontal",/*横向滑动*/  
+        loop:true,/*形成环路（即：可以从最后一张图跳转到第一张图*/  
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })  
+</script>
+
+
+  </body>
+  
+</html>

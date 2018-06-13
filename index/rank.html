@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="../js/main.js" ></script>
+    <script type="text/javascript" src="../js/jquery-progress.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+
+  </head>
+  <body>
+    <div class="detail_title myrank">
+      <a href="javascript:;" onclick="javascript:history.back(-1);"><img src="../images/index/back.png"></a>
+     <span>会员等级</span>
+   </div>
+  	
+ <!-- 代码 开始 -->
+<div class="waic progress"></div>
+<div id="progress_num">
+<ul>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+  <li><span>普通用户</span><em>积分：0</em></li>
+</ul>
+</div>
+<script type="text/javascript">
+$(function(){
+  var geshu = $(".djwai").children(".dengji").length;
+    // alert(geshu);
+  var wid = $(".djwai").width()/geshu/2;
+  var myhei= $(".djwai").width()/geshu;
+  // alert(wid);
+  var widt = wid + "px";
+  var myheight=myhei+"px";
+  // alert(widt);
+  $(".xianpa").css({"padding-left":widt,"padding-right":widt});
+});
+
+$(".progress").startProgress({
+  "nodes":[
+      {"name":"普通用户","money":0},
+      {"name":"VIP1","money":10},
+      {"name":"VIP2","money":98},
+      {"name":"VIP3","money":198},
+      {"name":"VIP4","money":998},
+      {"name":"VIP5","money":3998},
+      {"name":"VIP6","money":10000},
+      {"name":"VIP7","money":30000},
+      {"name":"VIP8","money":50000},
+      {"name":"VIP9","money":100000},
+      {"name":"VIP10","money":200000},
+      {"name":"VIP11","money":400000},
+      {"name":"VIP12","money":700000}
+      ],
+  "hasPay":197
+});
+</script>
+<!-- 代码 结束 -->
+
+
+  </body>
+  
+</html>

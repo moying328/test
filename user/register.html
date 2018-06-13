@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="../js/main.js" ></script>
+    <link rel="stylesheet" href="../css/main.css" />
+
+  </head>
+  <body>
+    <div class="detail_title">
+      <a href="javascript:;" onclick="javascript:history.back(-1);"><img src="../images/index/back.png"></a>
+     <span>新用户注册</span>
+   </div>
+
+   <div class="register_box">
+     <div class="user">
+       <input id="phone" type="text" placeholder="请输入手机号码" name="">
+       <div class="prompt1 prompt">请输入正确的手机号</div>
+     </div>
+     <div class="code">
+     <div class="password2" style="margin-bottom: 0.1rem">
+       <input id="checkCode" type="password" placeholder="请输入验证码">
+       <a id="code-btn" class="fr">获取短信验证码</a>
+     </div>
+     <div class="prompt2 prompt">验证码不能为空</div>
+   </div>
+     <div class="password" style="margin-bottom: 0.2rem">
+       <input id="mypassword" style="margin-bottom: 0.1rem" type="password" placeholder="请输入6-16位密码，区分大小写" name="">
+       <div class="prompt3 prompt">请输入6-16位密码</div>
+     </div>
+
+     <div class="select">
+        <div class="clear" style="margin-bottom: 0.1rem">
+        <input class="magic-radio" type="radio" name="radio" id="r1" value="option1">  
+        <label for="r1" class="myradio fl">我是会员用户</label>  
+     
+        <input class="magic-radio" type="radio" name="radio" id="r2" value="option2">  
+        <label for="r2" class="myradio fr">我是服务商</label>   
+        </div>
+        <div class="prompt prompt4" style="text-align: center;">请选择一个注册类型</div>
+     </div> 
+
+     <div class="register_way">
+       <a class="way">完成注册</a>
+     </div>
+   </div>
+  	
+  </body>
+  
+</html>

@@ -1,0 +1,94 @@
+.login_box,.register_box{
+	padding: 0 0.48rem;margin-top: 1rem;
+	.code{margin-bottom: 0.6rem;}
+	.prompt{color: #00dfb9;font-size: 0.2rem;display: none;}
+	.user,.password,.code .password2{
+		input{
+			border: none;
+			height: 0.44rem;
+			line-height: 0.44rem;
+			font-size: 0.26rem;
+			&::-webkit-input-placeholder{
+            color:#ccc;font-size: 0.26rem;
+        }
+            &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#ccc;font-size: 0.26rem;
+        }
+            &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:#ccc;font-size: 0.26rem;
+        }
+            &:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#ccc;font-size: 0.26rem;
+        }
+		}
+		.code{margin-bottom: 0.1rem;}
+	}
+	.user,.password{
+		    input{
+		    	width: 100%;
+			    border-bottom: 0.02rem solid #f0f0f0;
+		    }
+            
+	}
+	.user{
+		margin-bottom: 0.6rem;
+		input{margin-bottom: 0.1rem; }
+	} 
+	.password input{margin-bottom: 0.3rem; }
+    .code .password2{
+    	     border-bottom: 0.02rem solid #f0f0f0;
+    	     margin-bottom: 0.3rem;
+    	     input{width:3.7rem; }
+    	     a{width:2.13rem;height: 0.34rem;line-height: 0.34rem;font-size: 0.28rem;color: #00dfb9;padding-left: 0.15rem;border-left: 0.02rem solid #f0f0f0;}
+    } 
+
+	.link a{color: #666666;font-size: 0.24rem;}
+	.login_way,.register_way{
+		.way1,.way2,.way{
+			display:block;width: 100%;height: 0.86rem;line-height: 0.86rem;font-size: 0.3rem;text-align: center;
+		}
+		.way1,.way2{border:0.02rem solid #00dfb9;}
+		.way{border: 0.02rem solid #cccccc;color: #fff;background: #cccccc;margin-top: 0.8rem;}
+		.way1{color: #fff;background: #00dfb9;margin: 0.92rem 0 0.46rem 0;}
+		.way2{color: #00dfb9;}
+	}
+}
+
+.login_box{
+	.user,.password,.code .password2{
+		input{
+		text-indent: 0.6rem;
+		}
+	}
+	.user input{background: url(../images/user/login1.png) no-repeat 0.1rem 0;background-size:0.35rem;}
+	.password input{background: url(../images/user/login2.png) no-repeat 0.1rem 0.04rem;background-size:0.26rem 0.32rem;}
+	.code .password2 input{background: url(../images/user/login3.png) no-repeat 0.1rem 0.04rem;background-size:0.28rem 0.32rem;}
+}
+
+
+/* 单选按钮样式start */
+.register_box{
+	.select{
+		padding: 0 0.27rem;
+		.magic-radio{margin: 0.03rem 0.03rem 0px 0.05rem;display: none;}
+		label{
+             display: block;
+             padding-left: 0.4rem;
+             height: 0.32rem;
+             cursor: pointer;
+             background: url(../images/user/round1.png) no-repeat;
+             background-size: 0.32rem;
+}
+        label.checked {
+  background: url(../images/user/round3.png) no-repeat;
+  background-size: 0.32rem;
+}
+	}
+}
+
+/* 单选按钮样式end */
+
+
+ 
+
+  

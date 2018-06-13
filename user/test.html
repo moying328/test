@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="../js/main.js" ></script>
+	<style type="text/css">
+		input[type="radio"] {
+  margin: 0.03rem 0.03rem 0px 0.05rem;
+  display: none;
+}
+label {
+  display: block;
+  padding-left: 0.4rem;
+  height: 0.32rem;
+  cursor: pointer;
+  background: url(../images/user/round1.png) no-repeat;
+  background-size: 0.32rem;
+}
+label.checked {
+  background: url(../images/user/round3.png) no-repeat;
+  background-size: 0.32rem;
+}
+	</style>
+</head>
+<body>
+
+
+<div class="select">
+  <div class="clear" style="margin-bottom: 0.1rem">
+  <input class="magic-radio" type="radio" id="r1" name="radio" value="r1">
+  <label class="myradio fl"  for="r1">我是会员用户</label>
+  <input class="magic-radio" type="radio" id="r2" name="radio" value="r2">
+  <label class="myradio fr" for="r2">我是服务商</label>
+</div>
+<div class="prompt prompt4" style="text-align: center;">请选择一个注册类型</div>
+</div>
+</body>
+<script type="text/javascript">
+	$(function() {
+  $('label').click(function(){
+    var radioId = $(this).attr('name');
+    $('label').removeAttr('class') && $(this).attr('class', 'checked');
+    $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+  });
+});
+</script>
+</html>
